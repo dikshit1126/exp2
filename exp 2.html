@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Feedback and Evaluation Form</title>
+    <meta name="description" content="HTML5-based Course Feedback and Evaluation Form with Login">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            background: url('https://th.bing.com/th/id/OIP.rpIZrQ_OdNbfHp8pmEx-iQHaEK?w=266&h=180&c=7&r=0&o=7&pid=1.7&rm=3');
+            background-size: 100vh 100vh;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #5c5c55;
+            text-shadow: 1px 1px 2px #534646;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.95);
+            background: url('data:image/webp;base64,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');
+            background-size: 100vh 90vh;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 0 15px rgba(66, 64, 64, 0.3);
+        }
+        fieldset {
+            margin-bottom: 2em;
+            border: 2px solid #464343;
+            padding: 1em;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 0.7em;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-top: 0.2em;
+            border: 1px solid #2a2727;
+            border-radius: 4px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 0.5em;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 48%;
+            margin-top: 1em;
+            font-size: 1em;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Course Feedback Form -->
+    <h1>Course Feedback and Evaluation</h1>
+    <form action="/serverlogic" method="post">
+        
+        <!-- Login Information -->
+        <fieldset>
+            <legend>Login Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username" maxlength="50">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password" minlength="6" maxlength="20">
+        </fieldset>
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Your full name" maxlength="100" autofocus>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="yourname@example.com">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required pattern="[0-9]{10}" placeholder="10-digit number">
+        </fieldset>
+
+        <!-- Course Details -->
+        <fieldset>
+            <legend>Course Details</legend>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">--Select--</option>
+                <option value="webdev">Web Development</option>
+                <option value="datasci">Data Science</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="networking">Networking</option>
+                <option value="security">Cybersecurity</option>
+            </select>
+            <label for="trainer">Trainer Name:</label>
+            <input type="text" id="trainer" name="trainer" required placeholder="Trainer’s name">
+        </fieldset>
+
+        <!-- Feedback -->
+        <fieldset>
+            <legend>Feedback</legend>
+            <label>Course Content Quality:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="content_quality" value="excellent" required> Excellent</label>
+                <label><input type="radio" name="content_quality" value="good"> Good</label>
+                <label><input type="radio" name="content_quality" value="average"> Average</label>
+                <label><input type="radio" name="content_quality" value="poor"> Poor</label>
+            </div>
+
+            <label>Teaching Style:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="teaching[]" value="engaging"> Engaging</label>
+                <label><input type="checkbox" name="teaching[]" value="clear"> Clear</label>
+                <label><input type="checkbox" name="teaching[]" value="supportive"> Supportive</label>
+                <label><input type="checkbox" name="teaching[]" value="fastpaced"> Fast-paced</label>
+            </div>
+
+            <label for="rating">Overall Rating (1 to 10):</label>
+            <input type="number" id="rating" name="rating" min="1" max="10" required>
+
+            <label for="url">Course Resource URL:</label>
+            <input type="url" id="url" name="url" required placeholder="https://example.com">
+
+            <label for="search">Search Topic Covered:</label>
+            <input type="search" id="search" name="search" placeholder="Search a topic...">
+
+            <label for="upload">Upload Assignment (PDF):</label>
+            <input type="file" id="upload" name="upload" accept=".pdf" required>
+
+            <label for="suggestions">Suggestions for Improvement:</label>
+            <textarea id="suggestions" name="suggestions" placeholder="Your suggestions..." rows="4"></textarea>
+
+            <label for="progress">Completion Progress:</label>
+            <progress id="progress" value="85" max="100">85%</progress>
+        </fieldset>
+
+        <!-- Submit / Reset -->
+        <input type="submit" value="Submit Feedback">
+        <input type="reset" value="Reset Form">
+    </form>
+</body>
+</html>
